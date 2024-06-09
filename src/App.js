@@ -7,7 +7,7 @@ function App() {
   const [city, setCity] = useState('Jaipur');    // State to manage the city name
   const [weatherData, setWeatherData] = useState();  // State to manage the weather data
 
-  const apiURL = `https://api.weatherapi.com/v1/current.json?key=8c4a99e8a8f04f549f5131948240906&q=${city}&aqi=no`
+  const apiURL = `https://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_API_KEY}&q=${city}&aqi=no`
 
   useEffect(() => {
     fetch(apiURL)
@@ -24,7 +24,7 @@ function App() {
       .catch((e) => {
         console.log(e);
       });
-  }, [city]);
+  }, [city, apiURL]);
 
   return (
     // MAIN CONTAINER
