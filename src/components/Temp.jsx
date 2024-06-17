@@ -66,14 +66,14 @@ const Temp = ({ theme, setTheme, setCity, stats }) => {
       </div>
       <div className="flex justify-center mt-5">
         <h1
-          className={`text-6xl font-semibold ${
+          className={`text-5xl lg:text-6xl font-semibold ${
             theme === "dark" ? "text-white" : "text-slate-800"
           }`}
         >
           {stats.temp}&deg;C
         </h1>
       </div>
-      <div className="flex justify-center items-center text-slate-300 mt-8 text-[25px]">
+      <div className="flex justify-center items-center text-slate-300 mt-8 text-[18px] lg:text-[25px]">
         <h1
           className={`${
             theme === "dark" ? "text-slate-300" : "text-slate-500"

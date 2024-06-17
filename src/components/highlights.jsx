@@ -17,7 +17,7 @@ const Highlights = ({ theme, stats }) => {
       >
         <h1 className="text-md mt-2">Wind Speed</h1>
         <div className="mt-2">
-          <span className="text-4xl font-bold">{stats.windSpeed}</span>
+          <span className="text-2xl lg:text-4xl font-bold">{stats.windSpeed}</span>
           <span className="text-2xl">{stats.windSpeedUnit}</span>
         </div>
         {stats.windDir ? (
@@ -40,8 +40,8 @@ const Highlights = ({ theme, stats }) => {
           <div className="mt-5 flex items-center">
             <BsDroplet className="text-3xl" />
             <div>
-              <span className="ms-2 text-4xl">{stats.humidity}</span>
-              <span className="ms-1 text-2xl">{stats.humidityUnit}</span>
+              <span className="ms-2 text-2xl lg:text-4xl">{stats.humidity}</span>
+              <span className="ms-1 text-lg lg:text-2xl">{stats.humidityUnit}</span>
             </div>
           </div>
         </div>
@@ -59,8 +59,8 @@ const Highlights = ({ theme, stats }) => {
           <MdOutlineVisibility className="text-3xl" />
         </div>
         <div className="mt-2">
-          <span className="text-4xl font-bold">{stats.visibility}</span>
-          <span className="text-2xl">{stats.visibilityUnit}</span>
+          <span className="text-2xl lg:text-4xl font-bold">{stats.visibility}</span>
+          <span className="text-lg lg:text-2xl">{stats.visibilityUnit}</span>
         </div>
       </div>
 
@@ -77,8 +77,8 @@ const Highlights = ({ theme, stats }) => {
           <GiWindSlap className="text-3xl" />
         </div>
         <div className="mt-2">
-          <span className="text-4xl font-bold">{stats.airPressure}</span>
-          <span className="text-2xl">{stats.airPressureUnit}</span>
+          <span className="text-2xl lg:text-4xl font-bold">{stats.airPressure}</span>
+          <span className="text-lg lg:text-2xl">{stats.airPressureUnit}</span>
         </div>
       </div>
     </>
