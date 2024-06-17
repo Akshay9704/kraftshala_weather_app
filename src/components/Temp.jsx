@@ -22,7 +22,7 @@ const Temp = ({ theme, setTheme, setCity, stats }) => {
 
   return (
     <>
-      <div className="flex flex-col md:flex-col items-center lg:flex-row lg:justify-between">
+      <div className="flex items-center justify-between">
         <input
           onChange={handleCityChange} // Handle the search input
           defaultValue="Jaipur"
@@ -73,7 +73,7 @@ const Temp = ({ theme, setTheme, setCity, stats }) => {
           {stats.temp}&deg;C
         </h1>
       </div>
-      <div className="flex justify-center items-center text-slate-300 mt-8 text-[18px] lg:text-[25px]">
+      <div className="flex justify-center items-center text-slate-300 mt-4 lg:mt-8 text-[18px] lg:text-[25px]">
         <h1
           className={`${
             theme === "dark" ? "text-slate-300" : "text-slate-500"
@@ -82,7 +82,7 @@ const Temp = ({ theme, setTheme, setCity, stats }) => {
           {stats.condition}
         </h1>
       </div>
-      <div className="flex justify-center items-center text-slate-400 mt-5 text-[15px]">
+      <div className="flex justify-center items-center text-slate-400 mt-2 lg:mt-5 text-[15px]">
         <h1>Date: {stats.time} | {stats.location} </h1>
       </div>
     </>

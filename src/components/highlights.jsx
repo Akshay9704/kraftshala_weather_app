@@ -13,7 +13,7 @@ const Highlights = ({ theme, stats }) => {
           theme === "dark"
             ? "bg-slate-600 text-slate-200"
             : "bg-slate-200 text-slate-800"
-        } p-2 flex flex-col justify-start items-center text-transform scale-100 hover:scale-110 transition-transform duration-300 ease-in-out`}
+        } px-2 lg:p-2 flex flex-col justify-start items-center text-transform scale-100 hover:scale-110 transition-transform duration-300 ease-in-out`}
       >
         <h1 className="text-md mt-2">Wind Speed</h1>
         <div className="mt-2">
@@ -34,7 +34,7 @@ const Highlights = ({ theme, stats }) => {
             theme === "dark"
               ? "bg-slate-600 text-slate-200"
               : "bg-slate-200 text-slate-800"
-          } p-2 flex flex-col justify-start items-center text-transform scale-100 hover:scale-110 transition-transform duration-300 ease-in-out`}
+          } px-2 lg:p-2 flex flex-col justify-start items-center text-transform scale-100 hover:scale-110 transition-transform duration-300 ease-in-out`}
         >
           <h1 className="text-md mt-2">Humidity</h1>
           <div className="mt-5 flex items-center">
@@ -52,7 +52,7 @@ const Highlights = ({ theme, stats }) => {
           theme === "dark"
             ? "bg-slate-600 text-slate-200"
             : "bg-slate-200 text-slate-800"
-        } p-2 flex flex-col justify-start items-center text-transform scale-100 hover:scale-110 transition-transform duration-300 ease-in-out`}
+        } px-2 lg:p-2 flex flex-col justify-start items-center text-transform scale-100 hover:scale-110 transition-transform duration-300 ease-in-out`}
       >
         <h1 className="text-md mt-2">Visibility</h1>
         <div className="mt-2">
@@ -70,7 +70,7 @@ const Highlights = ({ theme, stats }) => {
           theme === "dark"
             ? "bg-slate-600 text-slate-200"
             : "bg-slate-200 text-slate-800"
-        } p-2 flex flex-col justify-start items-center text-transform scale-100 hover:scale-110 transition-transform duration-300 ease-in-out`}
+        } px-2 lg:p-2 flex flex-col justify-start items-center text-transform scale-100 hover:scale-110 transition-transform duration-300 ease-in-out`}
       >
         <h1 className="text-md mt-2">Air Pressure</h1>
         <div className="mt-2">

@@ -27,10 +27,10 @@ function App() {
 
   return (
     // MAIN CONTAINER
-    <div className={`${theme === 'dark' ? 'bg-[#1F213A]' : 'bg-white'} h-screen flex flex-col lg:flex-row items-center lg:items-start lg:justify-center lg:align-top`}>
+    <div className={`${theme === 'dark' ? 'bg-[#1F213A]' : 'bg-white'} h-[100vh] flex flex-col lg:flex-row items-center lg:items-start lg:justify-center lg:align-top`}>
 
       {/* LEFT TEMPERATURE COMPONENT */}
-      <div className="mt-5 lg:mt-40 lg:w-1/5 lg:h-1/3">
+      <div className="mt-0 lg:mt-40 lg:w-1/5 lg:h-1/3">
         {weatherData &&
           <Temp theme={theme} setTheme={setTheme} setCity={setCity}
             stats={{
@@ -46,7 +46,7 @@ function App() {
       </div>
 
       {/* RIGHT HIGHLIGHTS COMPONENT */}
-      <div className="mt-0 lg:mt-40 lg:w-1/3 lg:h-1/3 p-10 grid grid-cols-2 gap-6">
+      <div className="-mt-5 lg:mt-40 lg:w-1/3 lg:h-1/3 p-10 grid grid-cols-2 gap-6">
         <h1 className={`${theme === 'dark' ? 'text-slate-200' : 'text-slate-800'} text-slate-200 text-2xl col-span-2`}>Today's Highlights</h1>
         {weatherData &&
           <>
